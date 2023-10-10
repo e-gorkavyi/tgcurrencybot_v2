@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Date;
 
 @Entity
 @Table(name = "SPEND")
@@ -19,4 +20,7 @@ public class Spend {
 
     @Column(name = "SPEND")
     private BigDecimal spend;
+
+    @Column(name = "DATE")
+    private Date date;
 }
