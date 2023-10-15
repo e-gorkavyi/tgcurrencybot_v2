@@ -1,0 +1,1 @@
+insert into spend (id, chat_id, spend) values (10, 2, 3000)

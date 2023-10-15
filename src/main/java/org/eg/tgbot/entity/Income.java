@@ -1,6 +1,7 @@
 package org.eg.tgbot.entity;
 
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -22,5 +23,6 @@ public class Income {
     private BigDecimal income;
 
     @Column(name = "DATE")
+    @CreationTimestamp
     private Date date;
 }
